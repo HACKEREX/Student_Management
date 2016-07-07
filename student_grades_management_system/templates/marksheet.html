@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block externalfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/mycss.css' %}">
+    <script src="{% static 'assets/js/jquery.min.js' %}">
+    </script>
+{% endblock %}
+
+{% block main_title %}
+    <p>Name of the Student </p>
+{% endblock %}
+
+
+{% block main_body %}
+    <div class="container">
+        <div class="row" id="header-data">
+            <div class="col-m1"></div>
+            <div class="col-m3">
+                <p>NAME</p>
+                <p>SEMESTER </p>
+                <p>BRANCH </p>
+                <p>STATUS </p>
+            </div>
+
+        </div>
+        <div class="row" id="body-data">
+            <p>Here GradeCard</p>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block scripts %}
+<script src="{% static 'assets/js/myjs.js' %}"></script>
+{% endblock %}

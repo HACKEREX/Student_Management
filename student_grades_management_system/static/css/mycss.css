@@ -1,0 +1,47 @@
+body{
+    background-image:url(/static/assets/images/back1.jpg);
+}
+
+
+#header-main{
+    background-image:url(/static/assets/images/back2.jpg);
+
+    padding:50px;
+    height:400px;
+    width:auto;
+}
+
+
+#info-bar{
+    height:50px;
+    font-size:30px;
+    font-family:Georgia;
+}
+
+
+#header-data{
+
+    font-size:20px;
+    font-family:Georgia;
+    margin-top:50px;
+    border-style:double;
+    padding:25px;
+}
+
+
+#body-data{
+    height:auto;
+    width:auto;
+    border-style:double;
+    margin-top:30px;
+
+}
+
+#profsite-search{
+    width:350px;
+    height:70px;
+    margin-top:50px;
+    margin-left:150px;
+    font-size:40px;
+    font-family:ariel;
+}

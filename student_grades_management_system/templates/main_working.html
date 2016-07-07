@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block externalfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/mycss.css' %}">
+    <script src="{% static 'assets/js/jquery.min.js' %}">
+    </script>
+{% endblock %}
+
+{% block main_title %}
+    <p>Professors Site</p>
+{% endblock %}
+
+
+{% block main_body %}
+    <div class="container">
+        <div  class="row" style="font-size:50px ; font-family:Georgia ; color:#23456f ">
+            <span style="font-size:30px ; font-family:Georgia ; color:#edf13c ">Welcome </span> Professor (name).
+        </div>
+        <div class="row" >
+            <form class="form-inline" role="form" action="./" method="POST" >{% csrf_token %}
+                <div class="form-group">
+                    <center><input type="text" class="form-control" id="profsite-search" placeholder="Enter Student's Id" ></center>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block scripts %}
+<script src="{% static 'assets/js/myjs.js' %}"></script>
+{% endblock %}

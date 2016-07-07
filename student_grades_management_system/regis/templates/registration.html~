@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block main_title %}
+    {{ regis_for }}
+{% endblock %}
+
+{% block main_body %}
+<div class="container">
+<div class="row">
+    <div class="col-sm-offset-2" id="registration-student" style="min-height:40px;"></div>
+</div>
+<div class="row" id="registration-student-status">
+<div role="form">
+    <form method="POST" action="/registration/stud/">
+	<div class="form-control"><table>{{ form_main.id }}</table></div>
+	<div class="form-group"><table>{{ form_main.name }}</table></div>
+	<div class="form-group"><table>{{ form_main.Programme }}</table></div>
+	<div class="form-group"><table>{{ form_main.dept }}</table></div>
+	<input type="submit" class="btn btn-active">
+    </form>
+</div>
+</div>
+</div>
+{% endblock %}
